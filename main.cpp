@@ -4,7 +4,18 @@ using namespace std;
 
 void sort(int array[],int size)
 {
-	
+	int temp = 0;
+	//冒泡排序
+	for(int i = 0;i<size;i++)
+	{
+		for(int j = 0;j<size-1-i;j++)
+		{
+			if(array[j]>array[j+1])
+			{
+				swap(array[j+1],array[j]);
+			}
+		}
+	}
 	
 }
 
