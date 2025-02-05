@@ -24,5 +24,9 @@ int main()
 	int array[] = {12,4,95,56,25,1};
 	int size = sizeof(array)/sizeof(array[0]);
 	sort(array,size);
+	for(auto& a:array)
+	{
+		cout<<a<<endl;
+	}
 	return 0;
 }
