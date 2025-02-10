@@ -5,6 +5,7 @@ using namespace std;
 void sort(int array[],int size)
 {
 	int temp = 0;
+	bool flag = false;
 	//冒泡排序
 	for(int i = 0;i<size;i++)
 	{
@@ -12,8 +13,13 @@ void sort(int array[],int size)
 		{
 			if(array[j]>array[j+1])
 			{
-				swap(array[j+1],array[j]);
+					swap(array[j+1],array[j]);
+					flag = true;
 			}
+		}
+		if(!flag)
+		{
+			break;
 		}
 	}
 	
