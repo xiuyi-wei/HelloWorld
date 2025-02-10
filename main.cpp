@@ -11,7 +11,8 @@ void sort(int array[],int size)
 	{
 		for(int j = 0;j<size-1-i;j++)
 		{
-			if(array[j]>array[j+1])
+			//小张修改排序算法，从大到小排序
+			if(array[j]<array[j+1])
 			{
 					swap(array[j+1],array[j]);
 					flag = true;
