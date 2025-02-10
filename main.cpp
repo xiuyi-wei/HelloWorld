@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-
+//xiaozhang adds the comment to the sort function
 void sort(int array[],int size)
 {
 	int temp = 0;
